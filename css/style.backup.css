@@ -1,0 +1,255 @@
+html {
+    box-sizing: border-box;
+    background-color:bisque;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  
+    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  
+  
+  
+  /*  inicio.html */
+  
+  #cabecera {
+    height: 90px;
+    border: solid 2px darkcyan;
+    display: flex;
+    flex-direction: row;
+    background-color: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #logo {
+    width: 70px;
+    height: 87px;
+  }
+  
+  #Barra {
+    justify-content: flex-end;
+  }
+  #Barra li {
+    list-style: none;
+    color: chocolate;
+    padding-left: 5px;
+  }
+ 
+  
+  @media (max-width:400px) {
+  #cabecera{
+    padding-left: 0;
+    height: 45px;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 20px;
+  }
+  #Barra{
+    flex-direction: column;
+  }
+  #logo{
+    width:40px;
+    height: 45px;
+  }
+  }
+  
+   /*footer*/
+    #pieDePagina {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: burlywood;
+  }
+  #pieDePagina img {
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    background-color: burlywood;
+    border: solid 2px darkcyan;
+    border-radius: 30%;
+    place-self: start;
+  }
+  
+  #pieDePagina Li,
+  h3 {
+    justify-self: center;
+    list-style: none;
+    font: Montserrat;
+  }
+  
+  @media (max-width:400px) {
+    #pieDePagina{
+  flex-direction: column;
+  position: sticky;
+  }
+  #pieDePagina h3{
+      font-size: small;
+  
+    }
+  }
+  
+  
+  /*       articulo principal de Nosotros */
+  .grilla {
+    display: grid;
+    grid-template-areas:
+     "header header header lateral"
+     "mainbody mainbody . lateral"
+     "mainbody mainbody . lateral"
+     "footer footer .     lateral";
+    height: 100vh;
+    gap: 5px;
+    background-color:  burlywood;
+    gap: 20px;
+  }
+  .grid-item{
+    border:solid 1px;
+    background-color: blanchedalmond;
+  border-radius: 4px;
+  }
+  
+  
+  .header{
+    grid-area: header;
+    color: darkblue;
+    justify-content: center;
+  }
+  .mainbody{
+    grid-area: mainbody;
+    color: brown;
+    place-self: center center;
+  }
+  
+    
+  
+  
+  .lateral{
+    grid-area: lateral;
+  
+  
+  }
+  .lateral img{
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+  }
+  .footer{
+    grid-area: footer;
+  }
+  @media (max-width:400px){
+   
+   .grilla{
+     grid-template-areas:
+     "header "
+     "mainbody"
+      "lateral"
+     "footer";
+  z-index: 1;
+   }
+   
+    .grilla h2,article,quote{
+      font-size: x-small;
+  
+    }
+   
+  
+    .lateral img{
+      width: 80px;
+      height: 80px;
+      margin: 2px;
+    
+    }
+  
+    .mainbody{
+      height: 100px;
+    }
+  }
+  /* galeria de productos */
+  .cajaFlex{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    }
+   .cajaFlex div{
+    width: 200px;
+    min-height: 200px;
+  
+    border: 1px solid darkblue;
+    margin: 5px;
+    background-color: wheat;
+    color:crimson;
+    font-size: medium;
+    font:200;
+    font-family: Montserrat;
+  
+   }
+   .cajaFlex h6,p{
+    align-self: center;
+    justify-content: center;
+    font-weight: 300;
+   }
+  .cajaFlex img{
+    padding: 5px;
+    width:160px;
+    height: 160px;
+    align-self: center;
+    border-radius: 20px;
+  }
+  
+  @media(max-width:400px){
+    .cajaFlex{
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  /* formulario de contacto*/
+  
+  .grilla1{
+    display: grid;
+     flex-wrap: wrap;
+     grid-template-columns: 1fr ;
+     grid-template-rows: 1fr 1fr 1fr 1fr ;
+  height: 100vh;
+  border:solid 2px;
+  background-color: wheat;
+  gap: 5px;
+  }
+  
+  
+  .grilla1 div{
+    background-repeat: no-repeat;
+   font-size: large;
+   font-style: oblique;
+   b
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+   }
+  
+   .caja1{
+    background-image: url("../img/revestimiento1.jpeg");
+  
+   }
+   .caja2{
+    background-image: url("../img/revestimiento2.webp");
+   }
+   .caja3{
+    background-image: url("../img/revestimiento3.jpg");
+   }
+   .caja4{
+    background-image: url("../img/revestimiento4.jpg");
+   }

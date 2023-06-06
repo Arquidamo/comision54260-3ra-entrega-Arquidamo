@@ -1,0 +1,90 @@
+/* fuentes */
+/*Medidas */
+/* mixins*/
+/* extends */
+#cabecera {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+#cabecera #logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* fuentes */
+/*Medidas */
+/* mixins*/
+/* extends */
+/* footer */
+:root {
+  --primary-color: $color_ter_li;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  line-height: 2px;
+  background-color: #0E402D;
+}
+body a {
+  text-decoration: none;
+  color: #152614;
+}
+body h1 {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 2px;
+  margin-bottom: 10px;
+}
+body .caja {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  color: #F2D0A9;
+}
+body .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body .video-container video {
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body a {
+  background-color: #F2D0A9;
+}
+body .video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+body .content {
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */

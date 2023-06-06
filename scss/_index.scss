@@ -1,0 +1,70 @@
+:root {
+    --primary-color: $color_ter_li;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $fuente_pri;
+    line-height: 2px;
+    background-color: $color_sec_da;
+    a {
+      text-decoration: none;
+      color: $color_ter_da;
+    }
+    h1{
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 2px;
+        margin-bottom: $espacio_s;
+    }
+    .caja{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: $espacio_m;
+        color: $color_prim_li;
+    }
+    .video-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        video{
+            min-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+        
+        a{
+            background-color: $color_prim_li;
+        }
+    .video-container::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: 0.3);
+    }
+    
+    .content{
+        z-index: 1;
+    }
+  
+}

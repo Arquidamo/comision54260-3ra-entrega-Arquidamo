@@ -1,0 +1,20 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "\"3ra entrega de curso 54260\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\" https://github.com/Arquidamo/comision54260-3ra-entrega-Arquidamo.git\""
+  },
+  "keywords": [
+    "coderhouse",
+    "3ra",
+    "entrega"
+  ],
+  "author": "\"Arquidamo de esparta\"",
+  "license": "ISC"
+}

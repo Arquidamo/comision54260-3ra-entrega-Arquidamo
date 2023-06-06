@@ -1,0 +1,68 @@
+$color_prim_li: #F2D0A9;
+$color_sec_li:#F1E3D3;
+$color_ter_li:#BFA89E;
+
+$color_pri_da: #394F49;
+$color_sec_da: #0E402D;
+$color_ter_da: #152614;
+
+/* fuentes */
+$fuente_pri: "Montserrat";
+$fuente_sec: "Roboto Slab";
+
+
+
+/*Medidas */
+
+$espacio_s:10px;
+$espacio_m:25px;
+$espacio_l:40px;
+
+
+/* mixins*/
+
+@mixin caja_1 ($width:100px,$heigth:100px){
+    background-color: $color_sec_da;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: $width;
+    height: $heigth;
+}
+
+@mixin estilo_bordes{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+}
+
+@mixin estilo_flex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:$espacio_s;
+    justify-content: center;
+}
+
+@mixin estilo_flex1_col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:$espacio_s;
+    justify-content: center;
+}
+@mixin medidas($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+
+/* extends */
+
+
+@mixin abajo{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}

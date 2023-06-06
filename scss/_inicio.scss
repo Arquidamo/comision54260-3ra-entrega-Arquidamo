@@ -1,0 +1,9 @@
+@import "variables";
+
+#cabecera{
+    @include estilo_flex1;
+    #logo{
+          @include medidas(100px,100px);            
+    }
+}
+
